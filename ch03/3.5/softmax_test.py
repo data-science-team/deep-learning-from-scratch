@@ -1,3 +1,4 @@
+# coding: utf-8
 import numpy as np
 
 a = np.array([0.3, 2.9, 4.0])
