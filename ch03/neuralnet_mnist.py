@@ -11,7 +11,8 @@ def get_data():
     (x_train, t_train), (x_test, t_test) = load_mnist(normalize=True, flatten=True, one_hot_label=False)
     return x_test, t_test
 
-
+# 1layer 50개, 2layer 100개, output layer 10개 (숫자가 0~9 니까..)
+# 이미 학습이 다 끝난 weight 값의 셋을 load하는 것.
 def init_network():
     with open("sample_weight.pkl", 'rb') as f:
         network = pickle.load(f)

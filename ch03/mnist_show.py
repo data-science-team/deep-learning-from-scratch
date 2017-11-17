@@ -10,7 +10,17 @@ def img_show(img):
     pil_img = Image.fromarray(np.uint8(img))
     pil_img.show()
 
+# normalize : True => 0~1.0 , False => 255유지
+# flatten : True => 1차원 배열로 만듬 784개, False => 1 x 28 x 28  3차원 배열
+# one_hot_label : label을 one-hot encoding 형태로 저장할지를 정함,
+# True => [0, 0, 1, 0, 0, 0] 즉, 정답만 1.
+# False => 7, 2 같이 숫자 형태로 레이블 저장함.
 (x_train, t_train), (x_test, t_test) = load_mnist(flatten=True, normalize=False)
+
+print(x_train.shape)
+print(t_train.shape)
+print(x_test.shape)
+print(t_train.shape)
 
 img = x_train[0]
 label = t_train[0]
