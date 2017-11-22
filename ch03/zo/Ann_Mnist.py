@@ -1,4 +1,5 @@
 # code: utf-8
+# ADD Feedforward using MNIST
 import sys, os
 import pickle
 import numpy as np

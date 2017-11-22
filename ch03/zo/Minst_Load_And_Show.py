@@ -1,4 +1,5 @@
 # code: utf-8
+#just mnist load and show
 import sys, os
 sys.path.append(os.pardir)
 import numpy as np
