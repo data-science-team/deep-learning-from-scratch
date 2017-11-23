@@ -9,6 +9,11 @@
 | sig_step_compare.py | 시그모이드 함수와 계단 함수의 그래프 모양을 비교해봅니다. | 3.2.5 시그모이드 함수와 계단 함수 비교 | 74 |
 | sigmoid.py | 시그모이드 함수를 구현한 코드입니다. | 3.2.4 시그모이드 함수 구현하기 | 72 |
 | step_function.py | 계단 함수를 구현한 코드입니다. | 3.2.3 계단 함수의 그래프 | 70 |
+| zo/Ann_Mnist.py | zo가 실습한 neuralnet_mnist.py입니다. | 3.6.2 신경망의 추론 처리 | 100 |
+| zo/Ann_Mnist_Batched.py | zo가 실습한 neuralnet_mnist_batch.py입니다. | 3.6.3 배치 처리 | 104 |
+| zo/Mnist_Load_And_Show.py | zo가 실습한 mnist_show.py 입니다. | 3.6.1 손글씨 데이터셋 | 99
+| zo/SinglePerceptron.py | zo가 제작한 SinglePerceptron 입니다. TestSinglePerceptron을 통해 학습가능합니다. | * | * |
+| zo/PerceptronTest.py | zo가 제작한 SinglePerceptron의 테스터입니다. AND/OR/NAND가 학습 가능함을, XOR은 학습 불가능함을 볼 수 있습니다. | * | * |
 
 ## 3장 신경망
 앞 장 배운 퍼셉트론 관련해서는 좋은 소식과 나쁜 소식이 있었습니다. 좋은 소식은 퍼셉트론으로 복잡한 함수도 표현할 수 있다는 것입니다. 그 예로 컴퓨터가 수행하는 복잡한 처리도 퍼셉트론으로 (이론상) 표현할 수 있음을 앞 장에서 설명했습니다. 나쁜 소식은 가중치를 설정하는 작업(원하는 결과를 출력하도록 가중치 값을 적절히 정하는 작업)은 여전히 사람이 수동으로 한다는 것입니다. 앞 장에서는 AND, OR 게이트의 진리표를 보면서 우리 인간이 적절한 가중치 값을 정했습니다.
