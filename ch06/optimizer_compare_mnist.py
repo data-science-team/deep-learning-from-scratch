@@ -59,6 +59,8 @@ markers = {"SGD": "o", "Momentum": "x", "AdaGrad": "s", "Adam": "D"}
 x = np.arange(max_iterations)
 for key in optimizers.keys():
     plt.plot(x, smooth_curve(train_loss[key]), marker=markers[key], markevery=100, label=key)
+
+plt.interactive(False)
 plt.xlabel("iterations")
 plt.ylabel("loss")
 plt.ylim(0, 1)

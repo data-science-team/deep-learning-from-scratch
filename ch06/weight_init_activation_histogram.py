@@ -2,7 +2,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
@@ -26,9 +25,9 @@ for i in range(hidden_layer_size):
         x = activations[i-1]
 
     # 초깃값을 다양하게 바꿔가며 실험해보자！
-    w = np.random.randn(node_num, node_num) * 1
+    # w = np.random.randn(node_num, node_num) * 1
     # w = np.random.randn(node_num, node_num) * 0.01
-    # w = np.random.randn(node_num, node_num) * np.sqrt(1.0 / node_num)
+    w = np.random.randn(node_num, node_num) * np.sqrt(1.0 / node_num)
     # w = np.random.randn(node_num, node_num) * np.sqrt(2.0 / node_num)
 
 
